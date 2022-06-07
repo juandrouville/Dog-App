@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { getDogs,searchDogName } from '../../redux/actions/dogs';
 import React, { useState } from 'react';
 import "./searchBar.css";
+import { IoIosSearch } from "react-icons/io";
 
 
 
@@ -25,7 +26,7 @@ function SearchBar(){
                 <button onClick={()=>{
                     if(!search){return dispatch(getDogs())};
                     dispatch(searchDogName(search));
-                }}>Search</button>
+                }}><IoIosSearch size={35}/></button>
             </div>
         </div>
     )

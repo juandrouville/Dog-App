@@ -8,24 +8,28 @@
     overflow:hidden;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
 }
 
-.container img{
-    margin-left:10px;
-    width:35%;
-    height:100%;
+.div-logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.div-logo img{
+    height: 60px;
+    box-shadow: rgba(0,0,0,0.2);
+    margin-right: 30px;
 }
 
-.container img:hover{
-    cursor: pointer;
-}
 
 .searchBar{
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
-    margin-right: 35px;
+    width:30%;
+    height: 80px;
 }
 
 .container .create{
